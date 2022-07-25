@@ -1,0 +1,121 @@
+:root {
+    --white: white;
+    --green: #67c73b;
+    --lightgrey: rgba(128, 128, 128, 0.494);
+  }
+  .header{
+    text-align: center;
+    font-weight: bolder;
+    color: var(--green);
+  }
+  .slider{
+    /* background-color: #67c73b; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+  }
+  .inslider{
+    height: 80vh;
+    width: 50%;
+    /* padding: 2vmax; */
+}
+.head{
+    text-align: center;
+}
+.para{
+      text-align: center;
+    font-weight: 600;
+  }
+  .sliderorg{
+    height: 60vh;
+  }
+  .sol{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.solin{
+    height: 35vh;
+    width: 60%;
+    z-index: 5;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vmax;
+    border-radius: 10px;
+
+}
+.que{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.quein{
+    height: 35vh;
+    width: 60%;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vmax;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+
+.quein h2{
+    color: var(--lightgrey);
+}
+.quein h5{
+    color: var(--green);
+}
+.arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+    width: 10%;
+}
+.arr{
+    color: black;
+}
+#blob1 {
+    position: absolute;
+    z-index: 1;
+    height: 20vmax;
+    top: 270%;
+    left: 30%;
+    color: rgba(255, 255, 255, 0.1);
+  }
+@media only screen and (max-width: 600px) {
+    .inslider{
+        width: 90%;
+    }
+.quein{
+    width: 100%;
+}
+.list::before{
+    color: var(--green);
+}
+.que{
+    height: 40vh;
+    align-items: center;
+    flex-direction: column;
+}
+.sol{
+    height: 40vh;
+    
+}
+.solin{
+    width: 100%;
+}
+.arrows{
+width: 20%;
+}
+}

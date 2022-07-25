@@ -1,0 +1,141 @@
+:root {
+  --white: white;
+  --green: #67c73b;
+}
+.navbar {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent !important;
+  color: var(--white);
+  z-index: 100;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+}
+.navul {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 1vmax;
+  font-size: 0.81vmax;
+  /* background-color: red; */
+}
+.cubeIcon {
+  font-size: 2vmax;
+  /* color: red; */
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+.leftside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+.rightside {
+  /* background-color: black; */
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.select {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 1vmax;
+}
+.option {
+  /* background: rgba(255, 255, 255, 0.219); */
+  background: var(--green);
+  border: none;
+  padding: 1vmax;
+}
+.option:hover {
+  color: var(--green);
+  background-color: var(--white);
+}
+.btns {
+  padding: 0.61vmax 1vmax;
+  color: white;
+  font-size: 0.71vmax;
+}
+.pre{
+  padding: 0.61vmax 1vmax;
+  color: white;
+  font-size: 0.71vmax;
+
+}
+.rightside{
+  /* background-color: red; */
+  width: 25%;
+}
+.fade {
+  background: rgba(255, 255, 255, 0.219);
+  border: none;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+.fade:hover {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.fds{
+  background: transparent;
+  border: 2px solid white;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+.trans {
+  background: transparent;
+  border: 1px white solid;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+.trans:hover {
+  background: rgba(255, 255, 255, 0.219);
+  border: 0px;
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 1024px) {
+  .rightside {
+    width: 30%;
+  }
+  .navul {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    /* background-color: pink !important; */
+  }
+  .navul {
+    width: 100%;
+    /* font-size: 1vmax; */
+    /* background: red; */
+  }
+  .leftside{
+    width: 80%;
+    flex-direction: column;
+  }
+.rightside {
+    width: 60%;
+  }
+}

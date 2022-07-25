@@ -1,0 +1,184 @@
+:root {
+  --white: white;
+  --green: #67c73b;
+  --lightgrey: rgba(128, 128, 128, 0.494);
+}
+.containersvg {
+  content: "";
+  height: 105vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: hsla(101, 46%, 52%, 1);
+  
+  background: linear-gradient(
+      150deg,
+    hsla(101, 46%, 52%, 1) 0%,
+    hsla(46, 86%, 61%, 1) 91%
+  );
+
+  background: -moz-linear-gradient(
+    150deg,
+    hsla(101, 46%, 52%, 1) 0%,
+    hsla(46, 86%, 61%, 1) 91%
+  );
+
+  background: -webkit-linear-gradient(
+      150deg,
+      hsla(101, 46%, 52%, 1) 0%,
+      hsla(46, 86%, 61%, 1) 91%
+      );
+      
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#70BC4C", endColorstr="#F1CA47", GradientType=1 );
+}
+
+#blob1 {
+  position: absolute;
+  z-index: 1;
+  height: 20vmax;
+  top: 10%;
+  left: 10%;
+  color: rgba(255, 255, 255, 0.1);
+}
+#blob2 {
+  position: absolute;
+  z-index: 1;
+  height: 15vmax;
+  top: 40%;
+  left: 60%;
+  color: rgba(255, 255, 255, 0.1);
+}
+#wave {
+  float: inline-end;
+  z-index: 10;
+}
+.headno1 {
+  /* font-weight: lighter; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.middleDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.midinsider {
+  width: 30%;
+  padding: 3vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 100;
+}
+.midinsider > h2 {
+  color: var(--white);
+  font-weight: lighter;
+}
+.midinsider > h5 {
+  color: var(--white);
+  font-weight: lighter;
+}
+.towinside {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+.buttons {
+  background-color: var(--white);
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  padding: 0.3vmax 1vmax;
+  width: 40%;
+  text-transform: uppercase;
+}
+.buttons p {
+  font-size: 0.7vmax;
+  color: var(--green);
+}
+.arrows {
+  background-color: black;
+  border-radius: 50px;
+  border: 2px solid red;
+  padding: 0.61vmax;
+  background-color: #67c73b;
+  background-color: green;
+}
+.span{
+  background-color: var(--green);
+  padding: 0.71vmax 0.81vmax;
+  border-radius: 50px;
+  font-size: 1vmax;
+}
+.socialMedia {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 17vmax;
+  width: 2vmax;
+  padding: 0.5vmax;
+  border-radius: 80px;
+  background: var(--lightgrey);
+  color: var(--white);
+}
+.iconsside {
+  font-size: 1vmax;
+}
+
+.iconsside:hover {
+  background-color: red;
+}
+.betup {
+  background-color: red;
+}
+@media only screen and (max-width: 1024px) {
+  .containersvg {
+    height: 70vh;
+  }
+  .midinsider {
+    width: 80%;
+  }
+  .buttons p {
+    font-size: 0.9vmax;
+  }
+  .socialMedia {
+    flex-direction: row;
+    width: 17vmax;
+    height: 2vmax;
+    top: 10%;
+    right: 35%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .containersvg {
+    height: 70vh;
+  }
+  .midinsider {
+    width: 80%;
+  }
+  .buttons p {
+    font-size: 0.9vmax;
+  }
+  .socialMedia {
+    flex-direction: row;
+    width: 17vmax;
+    height: 2vmax;
+    top: 20%;
+    right: 33%;
+  }
+}

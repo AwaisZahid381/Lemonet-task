@@ -1,0 +1,42 @@
+:root {
+  --white: white;
+  --green: #67c73b;
+  --lightgrey: rgba(128, 128, 128, 0.494);
+}
+.viddiv {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  /* margin: auto; */
+}
+.viddivmini {
+  display: flex;
+  flex-direction: column;
+  /* background-color: pink; */
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.bigheader{
+    line-height: 2vmax;
+}
+.heading{
+    color: var(--green);
+}
+.video{
+    height: 40vmax;
+    width: 40vmax;
+}
+/* video */
+@media only screen and (max-width: 600px) {
+    .bigheader{
+        line-height: 2.5vmax;
+    }
+}

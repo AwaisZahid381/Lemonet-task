@@ -1,0 +1,120 @@
+:root {
+  --white: white;
+  --green: #67c73b;
+  --lightgrey: rgba(128, 128, 128, 0.494);
+}
+#blob1 {
+    position: absolute;
+    z-index: 1;
+    height: 20vmax;
+    top: 180%;
+    left: 10%;
+    color: rgba(255, 255, 255, 0.1);
+  }
+  #blob2 {
+    position: absolute;
+    z-index: 1;
+    height: 15vmax;
+    top: 230%;
+    left: 60%;
+    color: rgba(255, 255, 255, 0.1);
+  }
+.divs {
+  /* background: pink; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.boxes {
+  /* background-color: yellow; */
+  height: 70%;
+  width: 30%;
+  margin: 0 1vmax;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+.header {
+  /* background-color: tomato; */
+  font-weight: lighter;
+  color: var(--green);
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.box2 {
+  /* background-color: #67c73b; */
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  /* background: red; */
+  height: 25%;
+}
+.bx {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  /* justify-content: flex-start; */
+  /* background-color: aqua; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+.innerflex {
+  /* background-color: violet; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bx p {
+    font-weight: 600;
+  font-size: 1vmax;
+
+}
+.samelogo {
+  font-size: 3vmax;
+  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.difflogo{
+    font-size: 6vmax;
+}
+.circle {
+  height: 1.52vmax;
+  width: 1.52vmax;
+  background-color: var(--green);
+  color: var(--green);
+  border-radius: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .divs{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+    }
+    .boxes{
+        width: 90%;
+    }
+    .box1{
+        text-align: center;
+    }
+}
